@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { staggerContainer, viewportOnce } from '@/lib/animations'
+import { staggerContainer } from '@/lib/animations'
 import PropertyCard from '@/components/properties/PropertyCard'
 import type { Property } from '@/types'
 
@@ -45,8 +45,7 @@ export default function PropertyGrid({
     <motion.div
       variants={staggerContainer}
       initial="hidden"
-      whileInView="visible"
-      viewport={viewportOnce}
+      animate="visible"
       className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-2 xl:grid-cols-3"
     >
       {properties.map((property) => (

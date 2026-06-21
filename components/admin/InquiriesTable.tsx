@@ -76,7 +76,9 @@ export default function InquiriesTable({
                   </td>
                   <td className="px-6 py-4 text-body">{inq.phone || '—'}</td>
                   <td className="px-6 py-4 text-body">
-                    {inq.property?.title ?? '—'}
+                    {inq.property?.title ?? (
+                      <span className="text-muted">General inquiry</span>
+                    )}
                   </td>
                   <td className="px-6 py-4 text-body">
                     {truncate(inq.message, 80)}
@@ -153,7 +155,11 @@ export default function InquiriesTable({
                     Property
                   </dt>
                   <dd className="mt-1 text-heading">
-                    {selected.property?.title ?? '—'}
+                    {selected.property?.title ?? (
+                      <span className="text-muted">
+                        General inquiry — not tied to a specific listing
+                      </span>
+                    )}
                   </dd>
                 </div>
                 <div>
