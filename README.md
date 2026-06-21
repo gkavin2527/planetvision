@@ -1,4 +1,4 @@
-# Urban Nest — Luxury Real Estate Platform
+# Planetvision — Luxury Real Estate Platform
 
 A premium, production-ready luxury real estate platform built with Next.js 14, TypeScript, Tailwind CSS, Framer Motion, and Supabase.
 
