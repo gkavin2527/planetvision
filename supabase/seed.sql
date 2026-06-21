@@ -1,0 +1,29 @@
+-- ============================================================
+--  Urban Nest — Seed Data
+--  Run AFTER schema.sql in the Supabase SQL Editor
+-- ============================================================
+
+insert into properties (title, description, price, price_type, location, city, bedrooms, bathrooms, area, property_type, images, amenities, featured, status) values
+('The Private Sanctuary', 'A perfect balance of modern design and tranquil features, creating an elegant space for relaxation. This stunning property offers floor-to-ceiling windows, an open-plan kitchen, and a private garden.', 2890000, 'sale', '4520 Washington Ave, Coral Gables', 'Miami', 4, 3, 3200, 'villa', ARRAY['https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800', 'https://images.unsplash.com/photo-1616137466211-f939a420be84?w=800'], ARRAY['Pool', 'Gym', 'Smart Home', 'Garden', 'Parking'], true, 'available'),
+
+('Infinity View Penthouse', 'Perched on the 42nd floor, this stunning penthouse offers panoramic city views through floor-to-ceiling glass. Features include a private rooftop terrace and chef kitchen.', 5200000, 'sale', '200 Biscayne Blvd, Downtown', 'Miami', 3, 3, 4100, 'penthouse', ARRAY['https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800', 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800'], ARRAY['Rooftop Terrace', 'Concierge', 'Pool', 'Valet Parking', 'Gym', 'Wine Cellar'], true, 'available'),
+
+('Elegant Modern Villa', 'Contemporary masterpiece in the Hollywood Hills with breathtaking canyon views. Open floor plan with retractable glass walls merging indoor and outdoor living.', 3750000, 'sale', '1234 Laurel Canyon Blvd', 'Los Angeles', 5, 4, 5500, 'villa', ARRAY['https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800'], ARRAY['Infinity Pool', 'Home Theater', 'Smart Home', '3-Car Garage', 'Gym', 'Chef Kitchen'], true, 'available'),
+
+('Brooklyn Heights Brownstone', 'Classic pre-war brownstone meticulously renovated with all modern amenities. Original details preserved — tin ceilings, hardwood floors, and a working fireplace.', 1850000, 'sale', '45 Pierrepont St, Brooklyn Heights', 'New York', 4, 2, 2800, 'house', ARRAY['https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800'], ARRAY['Fireplace', 'Garden', 'Parking', 'Laundry'], false, 'available'),
+
+('Minimalist Luxury Lounge', 'Sleek downtown apartment with an open concept floor plan and designer finishes throughout. Floor-to-ceiling windows bathe every room in natural light.', 19500, 'rent', '300 W Superior St, Unit 1802', 'Chicago', 2, 2, 1400, 'apartment', ARRAY['https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800'], ARRAY['Doorman', 'Gym', 'Rooftop Deck', 'Pet Friendly', 'In-unit Laundry'], false, 'available'),
+
+('Bright Contemporary Serenity Space', 'Light-filled modern apartment with stunning city skyline views. High ceilings, wide-plank oak floors and a gourmet kitchen with premium appliances.', 19500, 'rent', '450 Park Ave South, Unit 9E', 'New York', 1, 1, 950, 'apartment', ARRAY['https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800'], ARRAY['Concierge', 'Gym', 'Bike Storage', 'Rooftop'], false, 'available'),
+
+('Coral Gables Mediterranean', 'Timeless Mediterranean-style estate with lush tropical landscaping and resort-style pool. Grand entry foyer with soaring ceilings and imported marble floors.', 4100000, 'sale', '800 Casuarina Concourse', 'Miami', 6, 5, 6200, 'villa', ARRAY['https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200'], ARRAY['Pool', 'Spa', 'Tennis Court', 'Guest House', 'Smart Home', '4-Car Garage'], false, 'available'),
+
+('West Village Artist Loft', 'Rare full-floor loft in a converted 1920s warehouse. Soaring 14-foot ceilings, original brick walls, and north-facing skylights perfect for an artist or creative professional.', 3200000, 'sale', '75 Horatio St, 4th Floor', 'New York', 2, 2, 2200, 'apartment', ARRAY['https://images.unsplash.com/photo-1616137466211-f939a420be84?w=800'], ARRAY['Skylights', 'Exposed Brick', 'Keyed Elevator', 'Storage Unit'], false, 'available'),
+
+('Brickell Ultra Luxury Tower', 'Brand new ultra-luxury unit in Brickells most prestigious address. Features include smart home automation, Italian cabinetry, and direct bay views from every room.', 28500, 'rent', '1010 Brickell Ave, Unit 4502', 'Miami', 3, 3, 2100, 'apartment', ARRAY['https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800'], ARRAY['Pool', 'Spa', 'Gym', 'Concierge', 'Valet', 'Tennis', 'Business Center'], false, 'available'),
+
+('Highland Park Craftsman', 'Beautifully restored 1920s craftsman bungalow with modern updates. Warm wood detailing, built-in bookcases, and a chef kitchen with farmhouse sink.', 1650000, 'sale', '220 Kensington Pl', 'Los Angeles', 3, 2, 1950, 'house', ARRAY['https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800'], ARRAY['Fireplace', 'Garden', 'Garage', 'Laundry', 'Front Porch'], false, 'available'),
+
+('River North Penthouse Duplex', 'Spectacular duplex penthouse with private rooftop terrace and 360-degree city views. Features include a two-story great room with fireplace and professional chef kitchen.', 45000, 'rent', '600 N Fairbanks Ct, PH', 'Chicago', 4, 4, 4800, 'penthouse', ARRAY['https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800'], ARRAY['Rooftop Terrace', 'Fireplace', 'Concierge', 'Valet', 'Pool', 'Gym', 'Smart Home'], false, 'available'),
+
+('Montrose Modern Townhome', 'Newly constructed 4-story townhome in the heart of Montrose. Rooftop deck with downtown views, smart home features, and an attached 2-car garage.', 875000, 'sale', '1500 W 18th St', 'Houston', 3, 3, 2600, 'house', ARRAY['https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800'], ARRAY['Rooftop Deck', 'Smart Home', '2-Car Garage', 'EV Charger', 'Laundry'], false, 'available');
